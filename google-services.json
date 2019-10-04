@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1002139167839",
+    "firebase_url": "https://clickerchat-b7bd9.firebaseio.com",
+    "project_id": "clickerchat-b7bd9",
+    "storage_bucket": "clickerchat-b7bd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002139167839:android:463e09ecda888ba9",
+        "android_client_info": {
+          "package_name": "tretornesp.clickerchat3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002139167839-8iin5801ka47c9telqprlvsdsmkf6dvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tretornesp.clickerchat3",
+            "certificate_hash": "0323ca004b029c5f3c155411bcdd6aebf6bf17b7"
+          }
+        },
+        {
+          "client_id": "1002139167839-u0ccgt32rj7jua1ltsjkkm9ehmisq6pj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTMWi9g1YL_d5Bw7twS0gQ9L17hZycwZQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002139167839-u0ccgt32rj7jua1ltsjkkm9ehmisq6pj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
