@@ -1,0 +1,116 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/create_user_layout">
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/create_user_home_bar">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/home_view_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/home_view_profile_image"
+            android:src="@drawable/image_default_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/home_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainColor"
+            android:textSize="20sp"
+            android:text="@string/estado"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            />
+
+        <TextView
+            android:gravity="start"
+            android:hint="@string/estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_description"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainColor"
+                android:textSize="20sp"
+                android:text="@string/intereses"
+                android:fontFamily="sans-serif"
+                />
+
+            <ImageView
+                android:id="@+id/home_add_categories"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/add_interest_black"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:id="@+id/home_view_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home_location_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location_black"/>
+
+            <TextView
+                android:hint="@string/mi_casa"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_location_text"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        app:itemIconTint="@android:color/white"
+        android:id="@+id/create_user_home_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"
+        app:menu="@menu/bar_menu"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

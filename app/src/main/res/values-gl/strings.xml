@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">YourChat</string>
+
+    <string name="registro">Rexistro</string>
+
+    <string name="telefono">Teléfono</string>
+    <string name="pais">País</string>
+    <string name="codigo_postal">Código Postal</string>
+    <string name="fecha_de_nacimiento">Data de nacemento</string>
+    <string name="acepto_terminos">Acepto os  <a href="http://www.google.com/">Términos e Condicións</a></string>
+
+    <string name="buscar">Buscar</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="mensaje">Mensaxe…</string>
+    <string name="tus_grupos">Os Teus Grupos</string>
+    <string name="usuarios">%1d Participantes</string>
+    <string name="salir">Sair</string>
+    <string name="crear_usuario">Crear usuario</string>
+    <string name="crear_grupo">Crear grupo</string>
+    <string name="ver_grupos">Ver grupos</string>
+    <string name="salir_del_grupo_titulo">Sair do grupo</string>
+    <string name="salir_del_grupo_mensaje">Estás seguro de que desexas sair do grupo?</string>
+    <string name="si">Si</string>
+    <string name="no">Non</string>
+    <string name="hacer_admin">Facer Admin</string>
+    <string name="crear">Crear</string>
+    <string name="expulsar">Expulsar</string>
+    <string name="borrar_grupo">Borrar o grupo</string>
+    <string name="cambiar_nombre_grupo">Cambiar o nome do grupo</string>
+    <string name="descripcion">Descripción</string>
+    <string name="descripcion_hint">Introduce unha descripción para o teu grupo, podes añadir normas do grupo e a información do teu grupo</string>
+    <string name="escribe">Escrebe</string>
+    <string name="descargar_archivo">Descargar arquivo</string>
+    <string name="estado">Estado</string>
+    <string name="intereses">Intereses</string>
+    <string name="grupos">Grupos</string>
+    <string name="categorias">Categorías</string>
+    <string name="nuevo_grupo">Novo grupo</string>
+    <string name="nombre_de_grupo">Nome do grupo</string>
+    <string name="terminos_y_condiciones">Terminos e condicións</string>
+    <string name="contacto">Contacto</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="tendencias">Tendencias</string>
+    <string name="nombre">nome</string>
+    <string name="mi_casa">O meu lar</string>
+    <string name="solo_un_momento_mas">Tan so un momento máis…</string>
+    <string name="nombre_de_usuario">Nome de usuario</string>
+    <string name="email">Email</string>
+    <string name="contraseña">Contrasinal</string>
+    <string name="confirmacion_contraseña">Confirma a contrasinal</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="no_tienes_cuenta">¿Non tes conta? Rexístrate  <a href="">Aquí</a></string>
+    <string name="or">OR</string>
+    <string name="incia_facebook">Inicia sesión con Facebook</string>
+    <string name="inicia_google">Inicia sesión con Google</string>
+    <string name="conoce_a_gente_nueva">¡Coñece a xente nova!</string>
+    <string name="configuracion">Configuración</string>
+
+    <string-array name="categories">
+        <item name="musica">Música</item>
+        <item name="cocina">Cocina</item>
+        <item name="fotografia">Fotografía</item>
+        <item name="deporte">Deporte</item>
+        <item name="lectura">Lectura</item>
+        <item name="nature">Nature</item>
+        <item name="viajes">Viajes</item>
+    </string-array>
+
+
+
+</resources>

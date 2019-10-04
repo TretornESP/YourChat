@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:id="@+id/list_item"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/margin"
+        android:visibility="gone"
+        android:layout_width="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_height="1dp"/>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_internal"
+    android:layout_width="250dp"
+    android:layout_toEndOf="@id/margin"
+    android:background="@drawable/bg_chat_message"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/message_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_text"
+        android:adjustViewBounds="true"
+        android:src="@drawable/image_attach_file_white"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/message_image_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_text"
+        android:adjustViewBounds="true"
+        android:src="@drawable/play"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/black"
+        android:id="@+id/message_user"
+        android:textStyle="normal|bold"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/message_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/message_time"
+        android:textSize="12sp"
+        android:textStyle="normal|bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/message_user"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/message_time_attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/message_image"
+        android:layout_alignBottom="@+id/message_image"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/message_user_attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/message_image"
+        android:layout_alignTop="@+id/message_image"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>
+</RelativeLayout>

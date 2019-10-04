@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="user_1">#000000</color>
+    <color name="user_2">#4484ff</color>
+    <color name="user_3">#bf44ff</color>
+    <color name="user_4">#ffbf44</color>
+    <color name="user_5">#ea4c88</color>
+    <color name="user_6">#d48686</color>
+    <color name="user_7">#002245</color>
+    <color name="user_8">#90b6ff</color>
+    <color name="user_9">#008080</color>
+    <color name="user_10">#ff0000</color>
+    <color name="user_11">#ffd700</color>
+    <color name="user_12">#ff7373</color>
+    <color name="user_13">#40e0d0</color>
+    <color name="user_14">#800080</color>
+    <color name="user_15">#fa8072</color>
+    <color name="user_16">#f08080</color>
+    <color name="user_17">#008000</color>
+    <color name="user_18">#8b0000</color>
+    <color name="user_19">#ff00ff</color>
+    <color name="user_20">#a0db8e</color>
+    <color name="user_21">#cc0000</color>
+    <color name="user_22">#000080</color>
+    <color name="user_23">#3b5998</color>
+    <color name="user_24">#fef65b</color>
+    <color name="user_25">#ff4444</color>
+    <color name="user_26">#c0c0c0</color>
+    <color name="user_27">#9900ff</color>
+    <color name="user_28">#993399</color>
+    <color name="user_29">#ff0033</color>
+    <color name="user_30">#ffff66</color>
+    <color name="user_31">#333399</color>
+    <color name="user_32">#330033</color>
+    <color name="user_33">#9900ff</color>
+    <color name="user_34">#314317</color>
+    <color name="user_35">#a86b72</color>
+    <color name="user_36">#d8328f</color>
+    <color name="user_37">#3da7f0</color>
+    <color name="user_38">#c1ac55</color>
+    <color name="user_39">#d01de9</color>
+    <color name="user_40">#8b77e5</color>
+    <color name="user_41">#9e9497</color>
+    <color name="user_42">#1d9370</color>
+    <color name="user_43">#a3639e</color>
+    <color name="user_44">#eae28b</color>
+    <color name="user_45">#eeadfd</color>
+    <color name="user_46">#73b6a0</color>
+    <color name="user_47">#8e984c</color>
+    <color name="user_48">#2b822e</color>
+    <color name="user_49">#f59109</color>
+    <color name="user_50">#c8543b</color>
+
+    <array name="user_colors">
+        <item>@color/user_1</item>
+        <item>@color/user_2</item>
+        <item>@color/user_3</item>
+        <item>@color/user_4</item>
+        <item>@color/user_5</item>
+        <item>@color/user_6</item>
+        <item>@color/user_7</item>
+        <item>@color/user_8</item>
+        <item>@color/user_9</item>
+        <item>@color/user_10</item>
+        <item>@color/user_11</item>
+        <item>@color/user_12</item>
+        <item>@color/user_13</item>
+        <item>@color/user_14</item>
+        <item>@color/user_15</item>
+        <item>@color/user_16</item>
+        <item>@color/user_17</item>
+        <item>@color/user_18</item>
+        <item>@color/user_19</item>
+        <item>@color/user_20</item>
+        <item>@color/user_21</item>
+        <item>@color/user_22</item>
+        <item>@color/user_23</item>
+        <item>@color/user_24</item>
+        <item>@color/user_25</item>
+        <item>@color/user_26</item>
+        <item>@color/user_27</item>
+        <item>@color/user_28</item>
+        <item>@color/user_29</item>
+        <item>@color/user_30</item>
+        <item>@color/user_31</item>
+        <item>@color/user_32</item>
+        <item>@color/user_33</item>
+        <item>@color/user_34</item>
+        <item>@color/user_35</item>
+        <item>@color/user_36</item>
+        <item>@color/user_37</item>
+        <item>@color/user_38</item>
+        <item>@color/user_39</item>
+        <item>@color/user_40</item>
+        <item>@color/user_41</item>
+        <item>@color/user_42</item>
+        <item>@color/user_43</item>
+        <item>@color/user_44</item>
+        <item>@color/user_45</item>
+        <item>@color/user_46</item>
+        <item>@color/user_47</item>
+        <item>@color/user_48</item>
+        <item>@color/user_49</item>
+        <item>@color/user_50</item>
+
+    </array>
+
+</resources>

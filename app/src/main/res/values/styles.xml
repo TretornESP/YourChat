@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.ChatThemeCompat" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+        <item name="colorPrimary">@color/mainColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/mainColor</item>
+    </style>
+    <style name="AppTheme.GroupsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mainColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/mainColor</item>
+    </style>
+    <style name="AppTheme.ChatTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+        <item name="colorPrimary">@color/mainColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/mainColor</item>
+    </style>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+</resources>

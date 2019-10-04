@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="tretornesp.clickerchat3.Chat">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/mainColor">
+        <include layout="@layout/chat_toolbar"/>
+       </android.support.v7.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/input_layout"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/text_input_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            >
+            <EditText
+                android:textCursorDrawable="@drawable/cursor_drawable"
+                android:layout_marginTop="12dp"
+                android:hint="@string/escribe"
+                android:background="@android:color/transparent"
+                android:inputType="textMultiLine"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/attach"
+                android:id="@+id/input"
+                />
+
+            <ImageView
+                android:src="@drawable/image_attach_file"
+                android:id="@+id/attach"
+                android:layout_toStartOf="@id/fab"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="5dp"
+                android:layout_width="30dp"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/fab"
+                android:src="@drawable/ic_send"
+                android:layout_alignParentTop="true"
+                android:layout_width="30dp"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_of_message"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_above="@+id/input_layout"
+        android:dividerHeight="16dp"
+        android:layout_below="@+id/chat_toolbar"
+        android:divider="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="tretornesp.clickerchat3.MainActivity"
+    android:id="@+id/activity_main"
+    >
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/main_home_bar"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="75"
+                android:layout_height="0dp">
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tendencias_text"
+                android:textColor="@color/mainColor"
+                android:fontFamily="sans-serif"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tendencias"/>
+
+            <tretornesp.clickerchat3.NonScrollableListView
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/tendencias_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/list_divider"
+                android:dividerHeight="1px"
+                android:id="@+id/main_listView" />
+
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_weight="25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_image_layout"
+                android:layout_marginBottom="10dp"
+                >
+
+
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:tint="@color/mainColorAlpha"
+                android:scaleType="fitXY"
+                android:id="@+id/main_logo_bar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/main_bar"
+                />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/main_logo_bar"
+                    android:layout_alignTop="@+id/main_logo_bar"
+                    android:layout_alignEnd="@+id/main_logo_bar"
+                    android:layout_alignBottom="@+id/main_logo_bar"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:text="@string/conoce_a_gente_nueva"
+                    android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_below="@+id/main_logo_bar"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/categories_text"
+                android:textColor="@color/mainColor"
+                android:fontFamily="sans-serif"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/categorias"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/categories_text"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10.0sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/main_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.BottomNavigationView
+        app:itemIconTint="@android:color/white"
+        android:id="@+id/main_home_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainColor"
+        app:menu="@menu/bar_menu"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

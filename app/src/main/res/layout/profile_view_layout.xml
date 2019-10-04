@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/view_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/view_profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainColor"
+            android:textSize="20sp"
+            android:text="@string/estado"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            />
+
+        <TextView
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_profile_description"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainColor"
+            android:textSize="20sp"
+            android:text="@string/intereses"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/profile_view_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location_black"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/location_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainColor"
+            android:textSize="20sp"
+            android:text="@string/grupos"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"
+            />
+
+        <tretornesp.clickerchat3.NonScrollableListView
+            android:layout_marginStart="10dp"
+            android:id="@+id/view_profile_group_list"
+            android:layout_height="match_parent"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="1px"
+            android:layout_width="match_parent"/>
+
+    </LinearLayout>
+</ScrollView>

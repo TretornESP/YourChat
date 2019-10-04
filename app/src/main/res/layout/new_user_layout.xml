@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/new_user"
+    android:weightSum="100">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        />
+
+    <EditText
+        android:hint="@string/nombre_de_usuario"
+        android:id="@+id/new_user_username"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:maxLength="20"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:maxLength="50"
+        android:hint="@string/email"
+        android:id="@+id/new_user_mail"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.xwray.passwordview.PasswordView
+        android:maxLength="100"
+        android:layout_weight="10"
+        android:hint="@string/contraseña"
+        android:id="@+id/new_user_password"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.xwray.passwordview.PasswordView
+        android:layout_weight="10"
+        android:maxLength="100"
+        android:hint="@string/confirmacion_contraseña"
+        android:id="@+id/new_user_password_confirmation"
+        android:layout_marginStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="30dp"
+        android:inputType="textPassword"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:maxLength="15"
+        android:hint="@string/telefono"
+        android:id="@+id/new_user_phone"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:inputType="phone"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:maxLength="20"
+        android:hint="@string/fecha_de_nacimiento"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_weight="10"
+        android:id="@+id/new_user_date"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="date"
+        android:focusable="false"
+        android:clickable="true"
+        android:maxLines="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <EditText
+            android:maxLength="150"
+            android:layout_alignParentStart="true"
+            android:hint="@string/pais"
+            android:id="@+id/new_user_county"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="170dp"
+            android:inputType="textPostalAddress"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:layout_alignParentEnd="true"
+            android:maxLength="10"
+            android:layout_toEndOf="@+id/new_user_county"
+            android:hint="@string/codigo_postal"
+            android:id="@+id/new_user_pc"
+            android:layout_marginEnd="30dp"
+            android:layout_width="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <CheckBox
+            android:id="@+id/new_user_check"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/new_user_link"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/new_user_check"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/acepto_terminos"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+
+    <Button
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/new_user_create"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/crear_usuario"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/mainColor"
+        android:background="@drawable/category_bg"
+        />
+
+</LinearLayout>
+</ScrollView>

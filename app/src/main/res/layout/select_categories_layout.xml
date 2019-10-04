@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/select_categories_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tretornesp.clickerchat3.GroupList">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/categories_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mainColor"
+        />
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/categories_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:searchBackground="@color/mainColor"
+        app:searchSuggestionBackground="@color/mainColor"
+        app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"
+        app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+        app:searchSuggestionIcon="@drawable/ic_suggestion"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        />
+
+
+    <ListView
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/categories_toolbar"
+        android:layout_above="@+id/categories_okay"
+        android:id="@+id/categories_listView" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categories_okay"
+        android:layout_alignParentBottom="true"
+        android:text="@string/aceptar"
+        android:textColor="@android:color/white"
+        android:background="@color/mainColor"/>
+
+</RelativeLayout>

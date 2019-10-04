@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/login_layout"
+    android:weightSum="100">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        />
+
+    <EditText
+        android:hint="@string/email"
+        android:id="@+id/login_email"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:maxLength="50"
+        android:layout_weight="15"
+        android:layout_width="match_parent"
+        android:inputType="textEmailAddress"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.xwray.passwordview.PasswordView
+        android:maxLength="100"
+        android:layout_weight="10"
+        android:hint="@string/contraseña"
+        android:id="@+id/login_password"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="match_parent"
+        android:inputType="textPassword"
+        android:layout_height="0dp"/>
+
+    <Button
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/login_login"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/iniciar_sesion"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/mainColor"
+        android:background="@drawable/category_bg"
+        />
+
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_marginTop="20dp"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/no_tienes_cuenta"/>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:id="@+id/first_bar"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_marginEnd="5dp"
+            android:gravity="center_horizontal"
+            android:layout_toEndOf="@id/first_bar"
+            android:id="@+id/o_tambien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"/>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_toEndOf="@id/o_tambien"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        />
+
+
+    <Button
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/login_facebook"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/incia_facebook"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#3b5998"
+        android:background="@drawable/category_bg"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        />
+
+    <Button
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/login_google"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/inicia_google"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#db3236"
+        android:background="@drawable/category_bg"
+        />
+</LinearLayout>
